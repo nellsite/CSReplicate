@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="body">
+    <div id="title">
+        
+    </div>
+    <div class="col-md-3">
+        <ul id="sideNavigation">
+            <li class="sideNav"><span class="sideNavIcon glyphicon glyphicon-home" /><a href="#" style="padding-left:5px;">Home</a></li>
+            <li class="sideNav"><span class="sideNavIcon glyphicon glyphicon-comment" /><a href="#" style="padding-left:5px;">Chat</a></li>
+            <li class="sideNav"><span class="sideNavIcon glyphicon glyphicon-ok" /><a href="#" style="padding-left:5px;">Verify</a></li>
+            <li class="sideNav"><span class="sideNavIcon glyphicon glyphicon-user" /><a href="#" style="padding-left:5px;">Account</a></li>
+        </ul>
+    </div>
+    <div class="col-md-9">
+        <div class="jumbotron">
+            <h2>Someones profile <span style="padding-left:10px; font-size:small"><i class="glyphicon glyphicon glyphicon-thumbs-up"></i>Verified User</span></h2>
+            <div id="profileButtons">
+                <a class="btn btn-primary"><i class="glyphicon glyphicon-envelope" style="padding-right:5px;"></i>Message User</a>
+                <a class="btn btn-primary"><i class="glyphicon glyphicon-camera" style="padding-right:5px;"></i>Pictures</a>
+                <a class="btn btn-primary"><i class="glyphicon glyphicon-alert" style="padding-right:5px;"></i>Report User</a>
+            </div>
+            <div id="profileInfo">
+                <img class="profilePicture" src="https://s-media-cache-ak0.pinimg.com/originals/6c/a8/8b/6ca88bc981edfaacdf64b1d758d77de4.jpg" />
+                <p class="profileWriting">
+                    This is some sample text.
+                </p>
+            </div>
+        </div>
+        <div id="restOfProfile">
+            <p>
+                This is more profile text.
+
+
+
+                
+            </p>
+            <p>
+                Hello everyone.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<style>
+    #sideNavigation {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li.sideNav {
+        display: block;
+        width: auto;
+    }
+    .sideNavIcon {
+        margin: 5px;
+    }
+    .sideNavigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-color: #f1f1f1;
+}
+
+.sideNav {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+.sideNav:hover {
+    background-color: #555;
+    color: white;
+}
+
+.profilePicture{
+    max-height:200px;
+    margin-top:-200px;
+    float:right;
+}
+
+.profileWriting{
+     float:right;
+}
+
+#profileInfo{
+    display:inline;
+}
+
+#profileButtons{
+    margin-top:10em;
+}
+</style>
